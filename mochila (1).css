@@ -1,0 +1,183 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  color: #4f4f4f;
+  background-color: #f3e8f5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+header {
+  background: linear-gradient(135deg, #5f2a7f 0%, #7a3e7d 100%);
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2.5rem;
+  padding: 2.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.section h2 {
+  color: #6a4c82;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid #f0e5f5;
+  font-weight: 600;
+}
+
+.section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+.section ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+.section li {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+}
+
+/* Estilos para imágenes centradas */
+.image-container {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.02);
+}
+
+.image-caption {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Estilos para el botón mejorado */
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(to right, #9b4d97, #7a3e7d);
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(155, 77, 151, 0.3);
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to right, #8a4386, #6a376d);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(155, 77, 151, 0.4);
+}
+
+/* Pie de página mejorado */
+footer {
+  background: linear-gradient(135deg, #4f2c67 0%, #3a1f4d 100%);
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+  }
+  
+  .section {
+    padding: 1.8rem;
+  }
+  
+  .section h2 {
+    font-size: 1.7rem;
+  }
+  
+  .cta-button {
+    padding: 0.9rem 1.8rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 2rem 1rem;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section {
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+}
